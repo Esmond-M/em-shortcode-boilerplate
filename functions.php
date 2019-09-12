@@ -3,7 +3,7 @@
 
 function em_enqueue_scripts_styles() {
      $ss_version = rand(1,1000);
-    $ss_version = '15.0';
+     //$ss_version = '15.0';
     //Styles
     $plugin_url = plugin_dir_url( __FILE__ );
     wp_enqueue_style('shortcodes-label',$plugin_url . '/css/style.css', array(), $ss_version);
