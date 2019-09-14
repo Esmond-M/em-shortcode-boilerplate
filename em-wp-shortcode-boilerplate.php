@@ -1,8 +1,8 @@
 <?php
 /**
-* Plugin Name: EM-Shortcodes 
+* Plugin Name: EM-WP-Shortcodes 
 * Plugin URI: https://esmondmccain.com
-* Description: Boilerplate for adding shortcode to clients website
+* Description: Boilerplate for adding shortcodes to clients Wordpress websites.
 * Version: 1.0
 * Author: Esmond Mccain
 * Author URI: https://esmondmccain.com
