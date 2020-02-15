@@ -2,7 +2,7 @@
 /**
 * Plugin Name: EM-WP-Shortcodes 
 * Plugin URI: https://esmondmccain.com
-* Description: Boilerplate for adding shortcodes to clients Wordpress websites.
+* Description: Wordpress plugin boilerplate for adding shortcode to clients website. Currently this plugin adds a generic form using a shortcode "[test_shortcode]".
 * Version: 1.0
 * Author: Esmond Mccain
 * Author URI: https://esmondmccain.com
