@@ -1,7 +1,7 @@
 <?php
 
-   if ( !class_exists( 'Em-Wp-Shortcode-Boilerplate' ) ) {
-     class Em-Wp-Shortcode-Boilerplate {  //begin class
+   if ( !class_exists( 'Em_Wp_Shortcode_Boilerplate' ) ) {
+     class Em_Wp_Shortcode_Boilerplate {  //begin class
         
      private static $instance;
 
@@ -47,6 +47,6 @@
     return $shortcode_html;
      }
    }
-    Em-Wp-Shortcode-Boilerplate::instance();
+    Em_Wp_Shortcode_Boilerplate::instance();
  //-----------------------end class
 }
