@@ -32,7 +32,7 @@ if (!class_exists('EmWpShortcodeBoilerplate')) {
                 'test_shortcode',
                 [$this, 'shortcodeContent']
             );
- 
+
         }
         /**
         Loading styles and scripts
@@ -42,13 +42,11 @@ if (!class_exists('EmWpShortcodeBoilerplate')) {
         public function emEnqueueScriptsStyles()
         {
             $ss_version = rand(1, 1000);
-            //$ss_version = '15.0';
-            //Styles
-            $plugin_url = plugin_dir_url(__FILE__);
+            //Used to add a query string.
             wp_enqueue_style(
                 'shortcodes-label',
-                $plugin_url .
-                '/css/style.css', [], $ss_version
+                EM_WP_Shortcodes_Constants_URL .
+                '/public/css/style.css', [], $ss_version
             );
         }
         /**
@@ -62,24 +60,24 @@ if (!class_exists('EmWpShortcodeBoilerplate')) {
         {
             $a = shortcode_atts(
                 [
-                'class' => ' '
+                    'class' => ' '
                 ],
                 $atts
             );
             ob_start();
             ?>
-    <div class="<?php echo  $a['class']; ?>">
-    <form>
-      <label class="shortcode-label">First name:
-      </label> <input type="text" name="first_name" />
-      <br>
-      <label class="shortcode-label">Last name:
-      </label> <input type="text" name="last_name" />
-    </form>
-    </div>
+            <div class="<?php echo  $a['class']; ?>">
+                <form>
+                    <label class="shortcode-label">First name:
+                    </label> <input type="text" name="first_name" />
+                    <br>
+                    <label class="shortcode-label">Last name:
+                    </label> <input type="text" name="last_name" />
+                </form>
+            </div>
             <?php
-             $shortcode_html = ob_get_clean();
-             return $shortcode_html;
+            $shortcode_html = ob_get_clean();
+            return $shortcode_html;
         }
     }
 }
